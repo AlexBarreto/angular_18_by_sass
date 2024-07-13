@@ -1,0 +1,206 @@
+@import '../../../styles/variables'
+@import '../../../styles/mixins'
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+
+
+.full-container
+    width: 100%
+    height: 100vh
+    overflow: auto
+
+.full-container::-webkit-scrollbar 
+    width: 0
+    height: 0
+
+
+/* Tornar a scrollbar invisível no Firefox */
+.full-container
+    scrollbar-width: none
+
+
+/* Tornar a scrollbar invisível no IE10+ */
+.full-container 
+    -ms-overflow-style: none
+
+
+    .header
+        width: 100%
+        height: 70px
+        background: linear-gradient(to bottom, $teal-900, $teal-600)
+        @include flex-space-between
+        padding-left: 50px
+        padding-right: 50px
+        position: fixed
+
+        .btn-login
+            width: 150px
+            height: 45px
+            border-radius: 5px
+            background-color: transparent
+            border: 2px solid $white
+            font-weight: bold
+            cursor:  pointer 
+            color: #fff
+            &:hover
+                background: linear-gradient(to bottom, $teal-500, $teal-200)
+                border: none
+        .nav-bar
+            ul
+                @include flex-center
+                gap: 20px
+                list-style: none
+                li
+                    a
+                        text-decoration: none
+                        font-weight: bold
+                        color: $white
+                        font-family: 'Poppins', sans-serif
+                        font-size: 16px
+
+    #background-video
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        object-fit: cover
+        opacity: 0.9
+        z-index: -1
+        opacity: 0.3
+    .container-split
+        @include flex-center
+        width: 100%
+        height: 100vh
+        max-height: 100vh
+        padding-top: 70px
+
+        .item-left
+            width: 60%
+            height: 100vh
+            @include flex-center
+            padding: 50px
+            p
+                font-size: 25px
+                color: $teal-900
+                font-family: 'Poppins', sans-serif
+                font-weight: bold
+        .item-right
+            width: 40%
+            height: 100vh
+            padding-right: 30px
+            @include flex-center
+
+            .form-box
+                width: 95%
+                height: auto
+                background: linear-gradient(to bottom, $teal-900, $teal-600)
+                padding: 20px
+                border-radius: 10px
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4)
+                @include flex-center
+                .form-group
+                    font-family: 'Poppins', sans-serif
+                    width: 100%
+                    height: auto
+                    .error-message
+                        color: red
+                        font-size: 12px
+                    h1 
+                        font-family: 'Poppins', sans-serif
+                        font-weight: bold
+                        color: $white
+                    input
+                        width: 100%
+                        height: 45px
+                        border-radius: 5px
+                        margin-top: 10px
+                        padding-left: 10px
+                        border: none
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4)
+                        outline: none
+                    .btn_entrar
+                        width: 100%
+                        height: 45px
+                        border-radius: 5px
+                        margin-top: 30px
+                        background-color: $teal-100
+                        border: none
+                        font-weight: bold
+                        cursor: pointer
+                        color: $teal-900
+                        padding-left: 120px
+                        @include flex-start
+                        gap: 80px
+                        border: none
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4)
+                        img 
+                            width: 35px
+                            height: 35px
+                        &:hover
+                            background-color: $teal-500
+                            color: $white
+                    .btn_google
+                        width: 100%
+                        height: 45px
+                        border-radius: 5px
+                        margin-top: 10px
+                        background-color: $blue-700
+                        border: none
+                        font-weight: bold
+                        color: #ffff
+                        cursor: pointer
+                        padding-left: 120px
+                        @include flex-start
+                        gap: 80px
+                        border: none
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4)
+                        img 
+                            width: 35px
+                            height: 35px
+                        &:hover
+                            background-color: $blue-800                           
+                    .btn_apple
+                        width: 100%
+                        height: 45px
+                        border-radius: 5px
+                        margin-top: 10px
+                        background-color: $neutral-900
+                        border: none
+                        font-weight: bold
+                        color: #ffff
+                        cursor: pointer
+                        padding-left: 120px
+                        @include flex-start
+                        gap: 80px
+                        border: none
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4)
+                        img 
+                            width: 35px
+                            height: 35px
+                        &:hover
+                            background-color: $neutral-700 
+                    .btn_microsoft
+                        width: 100%
+                        height: 45px
+                        border-radius: 5px
+                        margin-top: 10px
+                        background-color: $white
+                        border: 2px solid $neutral-700
+                        border-radius: 5px
+                        font-weight: bold
+                        color: $neutral-700
+                        cursor: pointer
+                        padding-left: 120px
+                        @include flex-start
+                        gap: 80px
+                        border: none
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4)
+                        img 
+                            width: 35px
+                            height: 35px
+                        &:hover
+                            background-color: $neutral-200 
+
+
+
+    

@@ -11,11 +11,10 @@ import { RegisterComponent } from './pages/register/register.component';
     RouterOutlet,
     HomeComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
   ],
+
   templateUrl: './app.component.html',
   styleUrl: './app.component.sass'
 })
-export class AppComponent {
-  title = 'angular_sass';
-}
+export class AppComponent {}
